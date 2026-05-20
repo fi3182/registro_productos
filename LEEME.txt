@@ -1,0 +1,73 @@
+PROYECTO: Sistema de Registro de Productos
+
+DESCRIPCIÓN:
+Este proyecto corresponde a un sistema de registro de productos, donde se valida la información ingresada en un formulario web y se almacena en una base de datos.
+
+TECNOLOGÍAS UTILIZADAS:
+- HTML
+- CSS (nativo, sin frameworks)
+- JavaScript (nativo + AJAX)
+- PHP (sin frameworks)
+- PostgreSQL
+
+VERSIONES UTILIZADAS:
+- Sistema Operativo:
+  Microsoft Windows 10 (Versión 10.0.19045.6466)
+
+- Servidor Web:
+  Apache 2.4.58 (Win64)
+
+- PHP:
+  PHP 8.2.12 (XAMPP)
+
+- Base de Datos:
+  PostgreSQL 18.4 (64-bit)
+
+ESTRUCTURA DEL PROYECTO:
+- index.php: formulario principal del sistema
+- css/: estilos del formulario
+- js/: validaciones y llamadas AJAX
+- php/: conexión y lógica del backend
+- SQL/: script de creación de tablas y carga de datos
+
+INSTALACIÓN Y EJECUCIÓN:
+
+1) Instalar XAMPP
+- Descargar desde https://www.apachefriends.org/
+- Instalar en el equipo.
+- Abrir el panel de control y levantar el servicio Apache.
+
+2) Instalar PostgreSQL
+- Descargar desde https://www.postgresql.org/
+- Instalar PostgreSQL junto con pgAdmin.
+
+3) Crear la Base de Datos
+- Abrir pgAdmin.
+- Crear una base de datos con el nombre:
+  registro_productos
+
+4) Crear tablas y datos iniciales
+- Abrir el archivo:
+  SQL/database.sql
+- Ejecutar el script completo dentro de la base de datos registro_productos.
+- Esto creará las tablas e insertará bodegas, sucursales, monedas y materiales de prueba.
+
+5) Configurar conexión del sistema
+- Abrir el archivo:
+  php/conexion.php
+- Editar la contraseña del usuario postgres según la configuración local.
+
+6) Ejecutar el proyecto
+- Copiar la carpeta del proyecto dentro de:
+  C:\xampp\htdocs\
+
+- Luego abrir en el navegador:
+  http://localhost/registro_productos/
+
+FUNCIONALIDAD PRINCIPAL:
+- Permite registrar productos en base de datos.
+- Bodega, sucursal y moneda se cargan dinámicamente desde PostgreSQL.
+- Sucursal depende de la bodega seleccionada.
+- Se validan los campos mediante JavaScript usando alert() y expresiones regulares.
+- El guardado se realiza mediante AJAX y procesamiento en PHP.
+- El código del producto se valida como único en la base de datos.
