@@ -53,28 +53,47 @@ CREATE TABLE producto_material (
     FOREIGN KEY (id_material) REFERENCES materiales(id_material)
 );
 
--- ==========================================
--- DATOS DE PRUEBA (para que el formulario cargue opciones)
--- ==========================================
+-- ==========================================================
+-- DATOS DE PRUEBA 
+-- ==========================================================
 
+-- BODEGAS
 INSERT INTO bodegas (nombre_bodega) VALUES
-('Bodega Central'),
-('Bodega Norte'),
-('Bodega Sur');
+('Bodega 1'),
+('Bodega 2'),
+('Bodega 3'),
+('Bodega 4'),
+('Bodega 5');
 
+-- SUCURSALES 
 INSERT INTO sucursales (id_bodega, nombre_sucursal) VALUES
-(1, 'Sucursal Santiago'),
-(1, 'Sucursal Maipú'),
-(2, 'Sucursal Antofagasta'),
-(2, 'Sucursal Iquique'),
-(3, 'Sucursal Concepción'),
-(3, 'Sucursal Temuco');
+(1, 'Sucursal 1'),
+(1, 'Sucursal 2'),
+(1, 'Sucursal 3'),
 
+(2, 'Sucursal 4'),
+(2, 'Sucursal 5'),
+(2, 'Sucursal 6'),
+
+(3, 'Sucursal 7'),
+(3, 'Sucursal 8'),
+(3, 'Sucursal 9'),
+
+(4, 'Sucursal 10'),
+(4, 'Sucursal 11'),
+(4, 'Sucursal 12'),
+
+(5, 'Sucursal 13'),
+(5, 'Sucursal 14'),
+(5, 'Sucursal 15');
+
+-- MONEDAS 
 INSERT INTO monedas (nombre_moneda) VALUES
-('CLP'),
-('USD'),
-('EUR');
+('PESO'),
+('DÓLAR'),
+('EURO');
 
+-- MATERIALES 
 INSERT INTO materiales (nombre_material) VALUES
 ('Plástico'),
 ('Metal'),
