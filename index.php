@@ -12,18 +12,18 @@
 <body>
 
     <div class="contenedor">
-        <h2>Formulario de Registro de Productos</h2>
+        <h2>Formulario de Productos</h2>
 
         <form id="formProducto">
 
             <div class="fila-doble">
                 <div class="fila">
-                    <label for="codigo">Código del Producto</label>
+                    <label for="codigo">Código</label>
                     <input type="text" id="codigo" name="codigo">
                 </div>
 
                 <div class="fila">
-                    <label for="nombre">Nombre del Producto</label>
+                    <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre">
                 </div>
             </div>
@@ -66,7 +66,7 @@
             </div>
 
             <div class="fila">
-                <label for="descripcion">Descripción del Producto</label>
+                <label for="descripcion">Descripción</label>
                 <textarea id="descripcion" name="descripcion"></textarea>
             </div>
 

@@ -2,10 +2,10 @@
 
 // Datos de conexión a PostgreSQL
 $host = "localhost";
-$port = "5432";
+$port = "5433";
 $dbname = "registro_productos";
 $user = "postgres";
-$password = "MI_PASSWORD";
+$password = "postgres";
 
 // Aquí se crea la conexión usando PDO
 try {
